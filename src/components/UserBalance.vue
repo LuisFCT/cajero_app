@@ -19,7 +19,7 @@
     created: function(){
         this.username = this.$route.params.username
         let self = this
-        axios.get("http://127.0.0.1:8000/user/balance/" + this.username)  //Llama al backend con la URL
+        axios.get("https://cajero-app164.herokuapp.com/user/balance/" + this.username)  //Llama al backend con la URL
         .then((result) => {
             self.balance = result.data.balance
         })
